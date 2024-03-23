@@ -64,3 +64,32 @@ nav li a {
     border-radius: 5px;
 }
 
+@media screen and(max-width: 767px) {
+    .produtos {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;;
+    }
+
+    .conteudo img {
+        margin-right: 0;
+        max-width: 90%;
+    }
+
+    #lista-produto {
+        display: block;
+    }
+} 
+    
+
+@media screen and(min-width: 768px) and(max-width: 1023px) {
+    .produtos {
+        display: block;
+    }
+
+    #lista-produto {
+        display: block;
+    }
+}
