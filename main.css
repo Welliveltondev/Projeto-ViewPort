@@ -64,32 +64,52 @@ nav li a {
     border-radius: 5px;
 }
 
-@media screen and(max-width: 767px) {
-    .produtos {
+@media screen and (max-width: 767px) {
+    .container {
         display: block;
+        max-width: 90%;
+        text-align: center;
     }
 
-    .container {
-        max-width: 90%;;
+    header {
+        text-align: center;
+    
+    }
+
+    .conteudo {
+        display: block;
     }
 
     .conteudo img {
-        margin-right: 0;
-        max-width: 90%;
+        align-items: center;
+        margin: 16px;
     }
-
-    #lista-produto {
-        display: block;
-    }
-} 
     
-
-@media screen and(min-width: 768px) and(max-width: 1023px) {
-    .produtos {
-        display: block;
+    .produtos h2 {
+        margin: 8px;
     }
 
-    #lista-produto {
+    #lista-produto, button {
         display: block;
+        max-width: 90%;
+        align-items: center;
+        padding: 6px;
+    }
+
+    #lista-produto  button {
+        margin: 6px 0;
+    }
+
+    .menu {
+        text-align: center;
+} 
+
+}
+
+@media screen and(min-width: 768px) and (max-width: 1023px) {
+    #lista-produto {
+        display: grid;
+        grid-template-columns: repeat(2, 47%);
+        row-gap: 1%;
     }
 }
